@@ -31,16 +31,16 @@ class ConnectionConfig
         $version = $version[0];
         if ($version === '5') {
             return new Client([
-                'base_url' => $this->serverBaseUrl . $this->getVersionSegment($apiVersion),
+                'base_url' => $this->serverBaseUrl.$this->getVersionSegment($apiVersion),
                 'defaults' => ['exceptions' => false],
             ]);
         } elseif ($version === '6') {
             return new Client([
-                'base_uri'   => $this->serverBaseUrl . $this->getVersionSegment($apiVersion),
+                'base_uri'   => $this->serverBaseUrl.$this->getVersionSegment($apiVersion),
                 'exceptions' => false,
             ]);
         } else {
-            throw new \RuntimeException('Unknown Guzzle version: ' . $version);
+            throw new \RuntimeException('Unknown Guzzle version: '.$version);
         }
     }
 
@@ -55,6 +55,6 @@ class ConnectionConfig
             return '/WS/';
         }
 
-        return ('/ws/api/v' . $apiVersion . '/');
+        return '/ws/api/v'.$apiVersion.'/';
     }
 }

@@ -43,9 +43,9 @@ class Parser
     /**
      * @param ResponseInterface|Response6Interface $response
      *
-     * @return string
-     *
      * @throws CommunicationException
+     *
+     * @return string
      */
     public static function getRawResponseBody($response)
     {
@@ -85,9 +85,9 @@ class Parser
     /**
      * @param ResponseInterface|Response6Interface $response
      *
-     * @return Credit
-     *
      * @throws CommunicationException
+     *
+     * @return Credit
      */
     public static function prepareCredit($response)
     {
@@ -97,9 +97,9 @@ class Parser
     /**
      * @param ResponseInterface|Response6Interface $response
      *
-     * @return SendSMSResponse[]|SMSId[]|SendError[]
-     *
      * @throws CommunicationException
+     *
+     * @return SendSMSResponse[]|SMSId[]|SendError[]
      */
     public static function prepareSendResponse($response)
     {
@@ -124,9 +124,9 @@ class Parser
      * @param int[] $opiloIds
      * @param ResponseInterface|Response6Interface$response
      *
-     * @return status[]
-     *
      * @throws CommunicationException
+     *
+     * @return status[]
      */
     public static function prepareStatusArray($opiloIds, $response)
     {
@@ -156,9 +156,9 @@ class Parser
     /**
      * @param ResponseInterface|Response6Interface $response
      *
-     * @return Inbox
-     *
      * @throws CommunicationException
+     *
+     * @return Inbox
      */
     public static function prepareInbox($response)
     {

@@ -56,7 +56,7 @@ class HttpClientBasicTest extends PHPUnit_Framework_TestCase
         $initCredit = $this->client->getCredit()->getSmsPageCount();
         $messages = [];
         for ($i = 0; $i < 10; $i++) {
-            $messages[] = new OutgoingSMS(getenv('PANEL_LINE'), getenv('DESTINATION'), 'V2::testSendMultipleSMS' . "($i)", $i, new \DateTime("+$i Minutes"));
+            $messages[] = new OutgoingSMS(getenv('PANEL_LINE'), getenv('DESTINATION'), 'V2::testSendMultipleSMS'."($i)", $i, new \DateTime("+$i Minutes"));
         }
 
         $response = $this->client->sendSMS($messages);
