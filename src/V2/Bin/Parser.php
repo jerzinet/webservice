@@ -19,9 +19,9 @@ class Parser
     /**
      * @param ResponseInterface|Response6Interface $response
      *
-     * @return string
-     *
      * @throws CommunicationException
+     *
+     * @return string
      */
     public static function getRawResponseBody($response)
     {
@@ -38,10 +38,9 @@ class Parser
     /**
      * @param ResponseInterface|Response6Interface $response
      *
-     * @return Status[]
-     *
      * @throws CommunicationException
      *
+     * @return Status[]
      * @return Credit
      */
     public static function prepareCredit($response)
@@ -59,9 +58,9 @@ class Parser
     /**
      * @param ResponseInterface|Response6Interface $response
      *
-     * @return Inbox
-     *
      * @throws CommunicationException
+     *
+     * @return Inbox
      */
     public static function prepareIncomingSMS($response)
     {
@@ -93,9 +92,9 @@ class Parser
     /**
      * @param string $rawResponse
      *
-     * @return Status[]
-     *
      * @throws CommunicationException
+     *
+     * @return Status[]
      */
     protected static function makeStatusArray($rawResponse)
     {
@@ -137,9 +136,9 @@ class Parser
     /**
      * @param ResponseInterface|Response6Interface $response
      *
-     * @return SendSMSResponse[]
-     *
      * @throws CommunicationException
+     *
+     * @return SendSMSResponse[]
      */
     public static function prepareSendResponse($response)
     {
@@ -151,9 +150,9 @@ class Parser
     /**
      * @param string $rawResponse
      *
-     * @return SendSMSResponse[]
-     *
      * @throws CommunicationException
+     *
+     * @return SendSMSResponse[]
      */
     protected static function makeSendResponseArray($rawResponse)
     {

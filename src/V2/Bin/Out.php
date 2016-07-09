@@ -19,9 +19,9 @@ class Out
      * @param RequestInterface | Request6Interface $request
      * @param array                                $options
      *
-     * @return ResponseInterface | Response6Interface
-     *
      * @throws CommunicationException
+     *
+     * @return ResponseInterface | Response6Interface
      */
     public static function send(Client $client, $request, $options = [])
     {
